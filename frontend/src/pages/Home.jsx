@@ -2,7 +2,10 @@ import React from 'react'
 import Greetings from '../components/home/Greetings'
 import MiniCard from '../components/home/MiniCard'
 import {BsCashCoin} from "react-icons/bs"
-import {GrInProgress} from "react-icons/gr"
+import {GrInProgress} from "react-icons/gr";
+import RecentOrder from '../components/home/Recentorder';
+
+
 
 const Home = () => {
   return (
@@ -23,7 +26,9 @@ const Home = () => {
             number={16}
             footerNum={3.6}
           />
+          
         </div>
+        <RecentOrder/>
       </div>
 
       {/* {RIGHT DIV} */}
