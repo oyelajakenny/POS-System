@@ -24,7 +24,15 @@ const Recentorder = () => {
           />
         </div>
         {/* {order list} */}
-        <div className="mt-6 px-6 ">
+        <div className="mt-6 px-6 overflow-y-scroll h-[300px] scrollbar-hide">
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
+          <OrderList />
           <OrderList />
         </div>
       </div>
