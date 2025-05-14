@@ -1,11 +1,10 @@
-import React from 'react'
-import Greetings from '../components/home/Greetings'
-import MiniCard from '../components/home/MiniCard'
-import {BsCashCoin} from "react-icons/bs"
-import {GrInProgress} from "react-icons/gr";
-import RecentOrder from '../components/home/Recentorder';
-
-
+import React from "react";
+import Greetings from "../components/home/Greetings";
+import MiniCard from "../components/home/MiniCard";
+import { BsCashCoin } from "react-icons/bs";
+import { GrInProgress } from "react-icons/gr";
+import RecentOrder from "../components/home/Recentorder";
+import PopularDishes from "../components/home/PopularDishes";
 
 const Home = () => {
   return (
@@ -13,7 +12,7 @@ const Home = () => {
       {/* {LEFT DIV} */}
       <div className="flex-[3] ">
         <Greetings />
-        <div className='flex items-center w-full gap-3 px-8 mt-8'>
+        <div className="flex items-center w-full gap-3 px-8 mt-8">
           <MiniCard
             title="Total Earnings"
             icon={<BsCashCoin />}
@@ -26,15 +25,15 @@ const Home = () => {
             number={16}
             footerNum={3.6}
           />
-          
         </div>
-        <RecentOrder/>
+        <RecentOrder />
       </div>
-
-      {/* {RIGHT DIV} */}
-      <div className="flex-[2]">Hello</div>
+      {/* {RIGHT DIV} */}{" "}
+      <div className="flex-[2]">
+        <PopularDishes />
+      </div>
     </section>
   );
-}
+};
 
-export default Home
+export default Home;
